@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jenkins CI/CD 실습</title>
+</head>
+<body>
+<h2>It's working on Tomcat server(9.0.85)</h2>
+<hr>
+<h1 th:text="${msg}"></h1>
+<h2>Today is</h2>
+<h2 th:text="'오늘은 ' + ${#dates.format(today, 'yyyy-MM-dd')}"></h2>
+<h3>Version: 1.0</h3>
+</body>
+</html>
