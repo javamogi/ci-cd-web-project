@@ -8,7 +8,12 @@ plugins {
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
-bootWar.enabled = false
+war.enabled = false
+bootWar {
+    archiveBaseName = "cicd-project"
+    archiveFileName = "cicd-project.war"
+    archiveVersion = "1.0"
+}
 
 java {
     sourceCompatibility = '17'
