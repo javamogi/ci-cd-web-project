@@ -8,8 +8,14 @@ plugins {
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
-war.enabled = false
+war {
+    enabled = true
+    archiveBaseName = "cicd-project-plain"
+    archiveFileName = "cicd-project-plain.war"
+    archiveVersion = "1.0"
+}
 bootWar {
+    enabled = false
     archiveBaseName = "cicd-project"
     archiveFileName = "cicd-project.war"
     archiveVersion = "1.0"
